@@ -144,12 +144,14 @@ h3 {
     flex-flow: wrap;
 }
 .resize {
-    width: 350px;
-    height: auto;
+    width: 100%;
+    /*height: auto;*/
 }
 .imagebox {
-    width: 350px;
-    height: 260px;
+    max-width: 350px;
+    min-width: 250px;
+    max-height: 260px;
+    min-height: auto;
     margin: 0 40px 60px 0;
     position: relative;
 }
@@ -204,9 +206,11 @@ footer {
 .threeitem {
     border-right: 1px solid #dddddd;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 0 20px 0 20px;
 }
 .threeitem2 {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-left: 20px;
 }
 .portfoliosec {
     background-color: #ffffff;
@@ -220,4 +224,7 @@ footer {
     height: 40px;
     width: 120px;
     margin: 10px 0 40px 0;
+}
+#paddingovr {
+    padding: 0;
 }
